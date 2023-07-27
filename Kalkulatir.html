@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_kalkulator.css?ver=1.1">
+	<title>Калькалятор каллорий онлайн</title>
+	<meta name="description" content="Расчет каллорий онлайн"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="igmp_index/LOGO.svg">
+    <script type="text/javascript" src=" https://code.jquery.com/jquery-1.11.2.js"></script>
+    
+</head>
+<body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(93224497, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/93224497" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+<!--Шапка-->
+<header>
+    <!--Боковая панель-->
+<input type="checkbox" id="nav-toggle" hidden>
+<nav class="nav">
+
+    <label for="nav-toggle" class="nav-toggle" onclick></label>
+
+    <h2 class="logo">Наши услуги</h2>
+    <ul>
+        <li><a href="personal_training.html">Индивидуальные занятия с тренером</a>
+        <li><a href="group_training.html">Персональные занятия в мини группах (2 - 3 человека)</a>
+        <li><a href="massage.html">Профессиональный массаж</a>
+        <li><a href="beauty_studio.html">Студия красоты</a>
+        <li><a href="beauty_makeup.html">Перманентный макияж</a>
+        <li><a href="artistic_tattoo.html">Художественная татуировка</a>
+    </ul>
+    <h2 class="logo">Прочее</h2>
+    <ul>
+        <li><a href="index.html">Главная страница</a>
+        <li><a href="Kalkulatir.html">Фитнес калькулятор</a>
+    </ul>
+</nav>
+<!--Шапка-->
+<div class="wrapper_header">
+    <div class="wrapper">
+        <div class="logo_fon">
+            <a href="index.html">
+                <img class="logo_size" src="igmp_index/LOGO.svg" alt="Best Life studio">
+            </a>
+        </div>
+        <div class="rainbow-text">
+            <h1 class="block-line">СТУДИЯ ФИТНЕСА И КРАСОТЫ - BEST LIFE STUDIO</h1>
+            <h1 class="block-line h1_with">BEST LIFE STUDIO</h1>
+        </div>
+        <!--Адрес и контакт-->
+        <div class="wrapper_cont">
+            <div>
+                <div class="wrapper">
+                    <div class="indents_menu">
+                        <a href="index.html#top">
+                            <p class="p_iphon">О нас</p>
+                        </a>
+                    </div>
+                    <div class="indents_menu">
+                        <a href="index.html#услуги">
+                            <p class="p_iphon">Услуги</p>
+                        </a>
+                    </div>
+                    <div class="indents_menu">
+                        <a href="index.html#контакты">
+                            <p class="p_iphon">Контакты</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="wrapper_iphon">
+                    <a class="a_iphon1" href="tel:+79017077531">+7 (901) 707 75 31</a>
+                    <div class="igm_size_margin">
+                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=79017077531&text&type=phone_number&app_absent=0">
+                            <img class="img_size" src="igmp_index/whatsapp.svg">
+                        </a>
+                    </div>
+                    <div class="igm_size_margin">
+                        <a target="_blank" href="https://vk.com/club219180853">
+                            <img class="img_size" src="igmp_index/Вконтакте.svg">
+                        </a>
+                    </div>
+                    
+                    <div class="igm_size_margin">
+                        <a target="_blank" href="https://youtube.com/@bestlifestudio8095">
+                            <img class="img_size" src="igmp_index/youtube.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<!--Тело сраницы-->
+<section class="container">
+    <!--Калькулятор каллорийности-->
+    <div class="block_indent">
+        <div class="header_block">
+            <div class="padding">
+                <h2 class="h2_text1">Фитнес калькулятор</h2>
+                <p class="p_headlines">Пол</p>
+                <!--Кнопки мужской\женский-->
+                <div class="flex_button" >
+                    <button class="button_gender active" id="man" onclick="button_man()">Мужской</button>
+                    <button class="button_gender" id="woman" onclick="button_woman()">Женский</button>
+                </div>
+                <!--Ввод имени-->
+                <div class="containet_name">
+                    <label for="fname" class="p_dimension">Необязательный параметр</label><br>
+                    <input type="text" class="input_name" name="fname" placeholder="Введите имя" id="name">
+                </div>
+                <p class="p_error" id="error"></p>
+                <!--Возраст вес и рост -->
+                <div class="flex_options">
+                    <div>
+                        <div class="flex_options_dimension">
+                            <p class="p_headlines1">Возраст</p>
+                            <p class="p_dimension">лет</p>
+                        </div>
+                        <!--Возраст -->
+                        <div class="number">
+                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                            <input type="number" min="14" class="input_options" id="age">
+                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex_options_dimension">
+                            <p class="p_headlines1">Рост</p>
+                            <p class="p_dimension">см</p>
+                        </div>
+                        <!--Рост -->
+                        <div class="number">
+                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                            <input type="number" step="any" min="100"  class="input_options" id="height">
+                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex_options_dimension">
+                            <p class="p_headlines1">Вес</p>
+                            <p class="p_dimension">кг</p>
+                        </div>
+                        <!--Вес -->
+                        <div class="number">
+                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                            <input type="number" min="40" class="input_options" id="weight">
+                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Физическая активность -->
+                <p class="p_headlines">Физическая активность</p>
+                <div class="container_headlines">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input" name="rad" checked onclick="input_radio1()">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Минимальная</div>
+                    </label>
+                    <p class="p_active">Сидячая работа без физических нагрузок</p>
+
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input" name="rad" onclick="input_radio2()">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Низкая</div>
+                    </label>
+                    <p class="p_active">Редкие, не регулярные нагрузки, активность в быту</p>
+
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input" name="rad" onclick="input_radio3()">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Средняя</div>
+                    </label>
+                    <p class="p_active">Тренировки 3-5 раза в неделю</p>
+
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input" name="rad" onclick="input_radio4()">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Высокая</div>
+                    </label>
+                    <p class="p_active">Тренировки 6-7 раза в неделю</p>
+
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input" name="rad" onclick="input_radio5()">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Очень высокая</div>
+                    </label>
+                    <p class="p_active">Больше 6 тренировок в неделю и физическая работа</p>
+                </div>
+                <!--Кнопка Расчет-->
+                <div class="flex_button_calculation">
+                    <a href="#block" class="shine-button1" onClick="kalkulator()">Расчитать</a>
+                </div>
+                  <!--Ваша цель-->
+                  <p class="p_target">Необязательные параметры</p>
+                  <p class="p_headlines">Ваша цель</p>
+                  
+                <div class="form_flex_kkal">
+                    <div>
+                        <label class="rad-label">
+                            <input type="radio" class="rad-input" name="rad1" checked onclick="input_save()">
+                            <div class="rad-design"></div>
+                            <div class="rad-text">Сохранить вес</div>
+                        </label>
+
+                        <label class="rad-label">
+                            <input type="radio" class="rad-input" id="input_weight_loss" name="rad1" onclick="input_weight_loss()">
+                            <div class="rad-design"></div>
+                            <div class="rad-text">Похудеть</div>
+                        </label>
+
+                        <label class="rad-label">
+                            <input type="radio" class="rad-input" id="input_kits" name="rad1" onclick="input_kits()">
+                            <div class="rad-design"></div>
+                            <div class="rad-text">Набрать массу</div>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="fname" class="p_dimension">Количество дней</label><br>
+                        <input class="input_days" type="number" min="7" id="days" disabled onclick="days()">
+
+                        <label for="fname" class="p_dimension">На сколько (кг)</label><br>
+                        <input class="input_days" type="number" max="200" id="days_weight" disabled onclick="days_weight()">
+                    </div>
+                    
+                </div>
+                <!--Расчет % жира в организме-->
+                <p class="p_headlines">Расчет % жира в организме</p>
+                <p class="p_percent2">Обхваты, см</p>
+                <div class="flex_percent">
+                    
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Плечо</label><br>
+                        <input class="input_percent" type="number" step="any" id="B10">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Предплечье</label><br>
+                        <input class="input_percent" type="number" step="any" id="B11">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Грудь</label><br>
+                        <input class="input_percent" type="number" step="any" id="B12">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Талия</label><br>
+                        <input class="input_percent" type="number" step="any" id="B13">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Бедро</label><br>
+                        <input class="input_percent" type="number" step="any" id="B14">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Голень</label><br>
+                        <input class="input_percent" type="number" step="any" id="B15">
+                    </div>
+
+         
+                </div>
+
+                <p class="p_percent2">Параметры для сравнения, см</p>
+                <div class="flex_percent">
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">Шея</label><br>
+                        <input class="input_percent" type="number" step="any" id="B1">
+                    </div>
+
+                    <div class="container_percent" id="woman_forma">
+                        <label for="fname" class="p_percent">Таз</label><br>
+                        <input class="input_percent" type="number" step="any" id="B2">
+                    </div>
+                </div>
+
+                <p class="p_percent2">Толщина жировой складки, мм</p>
+                <div class="flex_percent">
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">На плече спереди</label><br>
+                        <input class="input_percent" type="number" id="B17">
+                    </div>
+                    
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">На плече сзади</label><br>
+                        <input class="input_percent" type="number" id="B18">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">На предплечье</label><br>
+                        <input class="input_percent" type="number" id="B19">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">На спине</label><br>
+                        <input class="input_percent" type="number" id="B20">
+                    </div>
+
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">На животе</label><br>
+                        <input class="input_percent" type="number" id="B22">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent">На голени</label><br>
+                        <input class="input_percent" type="number" id="B24">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent" id="label_B21"></label><br>
+                        <input class="input_percent" type="number" id="B21">
+                    </div>
+
+                    <div class="container_percent">
+                        <label for="fname" class="p_percent" id="label_B23"></label><br>
+                        <input class="input_percent" type="number" id="B23">
+                    </div>
+                    
+                </div>
+                  <!--Кнопка Расчет-->
+                <div class="flex_button_calculation">
+                    <a href="#block" class="shine-button1" onClick="kalkulator()">Расчитать</a>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    
+    <!-- Модальное окно №1 c расчетами -->    
+    <div class="popup" id="block">
+        <!-- Форма -->
+        <form class="form_flex" >
+            <div style="width: 95%; background-color: black;" id="element-to-be-saved">
+                <p class="p_str" style="margin-top: 50px;" id="Date"></p>
+                <p class="p_str" id="name_p" style="color: #00fff2;"></p>
+                <p class="p_str">Индекс массы тела (ИМТ)</p>
+                <p class="p_IMT" id ="IMT"></p>
+                <p class="p_IMT" id ="IMT_index"></p>
+                <p class="p_str">Расчет суточной нормы каллорий</p>
+                <div class="form_flex_kkal">
+                    <div>
+                        <p class="p_result_weight_loss" style="text-align: center;">Похудение</p>
+                        <p class="p_result_weight_loss" id="result_weight_loss"></p>
+                        <p class="p_result_weight_loss" style="text-align: center;">Ккал</p>
+                    </div>
+                    <div>
+                        <p class="p_result_weight_maintenance" style="text-align: center;">Поддержание</p>
+                        <p class="p_result_weight_maintenance" id ="result_weight_maintenance"></p>
+                        <p class="p_result_weight_maintenance" style="text-align: center;">Ккал</p>
+                    </div>
+                    <div>
+                        <p class="p_result_weight_gain" style="text-align: center;">Набор</p>
+                        <p class="p_result_weight_gain" id="p_result_weight_gain"></p>
+                        <p class="p_result_weight_gain" style="text-align: center;">Ккал</p>
+                    </div>
+                </div>
+                <!-- Рекомендации БЖУ -->  
+                <p class="p_str">Рекомендации БЖУ</p>
+                <div class="form_flex_kkal">
+                    <!-- Рекомендации БЖУ при похудении -->  
+                    <div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Белок.svg" alt="">
+                            <p class="p_result_weight_loss" id="B_loss"></p>
+                        </div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Углеводы.svg" alt="">
+                            <p class="p_result_weight_loss" id="Y_loss"></p>
+                        </div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Жиры.svg" alt="">
+                            <p class="p_result_weight_loss" id="J_loss"></p>
+                        </div>
+                    </div>
+                    <!-- Рекомендации БЖУ при сохранение веса --> 
+                    <div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Белок.svg" alt="">
+                            <p class="p_result_weight_maintenance" id="B_maintenance"></p>
+                        </div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Углеводы.svg" alt="">
+                            <p class="p_result_weight_maintenance" id="Y_maintenance"></p>
+                        </div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Жиры.svg" alt="">
+                            <p class="p_result_weight_maintenance" id="J_maintenance"></p>
+                        </div>
+                    </div>
+                    <!-- Рекомендации БЖУ при наборе массы -->  
+                    
+                    <div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Белок.svg" alt="">
+                            <p class="p_result_weight_gain" id="B_gain"></p>
+                        </div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Углеводы.svg" alt="">
+                            <p class="p_result_weight_gain" id="Y_gain"></p>
+                        </div>
+                        <div class="flex_bgu">
+                            <img class="bgy_icon" src="igmp_index/Жиры.svg" alt="">
+                            <p class="p_result_weight_gain" id="J_gain"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Рекомендации по выбранной цели --> 
+                <div id="your_aim">
+                    <p class="p_str">Расчеты исходя из вашей цели</p>
+                    <p class="p_str_dimension">(Любое отклоенине от нормы можеть быть опасно для здоровья)</p>
+                    <p class="p_result_weight_gain" style="text-align: center;" id="target_cal"></p>
+                    <p class="p_result_weight_gain" style="text-align: center;" id="target_cal1"></p>
+                    <!-- БЖУ --> 
+                    <div style="display: flex; justify-content: center;">
+                        <div>
+                            <p class="p_result_weight_gain"  id="B_target"></p>
+                            <p class="p_result_weight_gain"  id="Y_target"></p>
+                            <p class="p_result_weight_gain" id="J_target"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Расчет % жира в организме --> 
+                <div id="fat_mass">
+
+                    <p class="p_str">Количество жира в организме</p>
+                    <p class="p_result_weight_loss" style="text-align: center;" id="fat_mass_kg"></p>
+                    <p class="p_result_weight_loss" style="text-align: center;" id="fat_mass_percent"></p>
+
+                    <p class="p_str">Скелетно-мышечная масса</p>
+                    <p class="p_result_weight_loss" style="text-align: center;" id="Skeletal_muscle_mass_kg"></p>
+                    <p class="p_result_weight_loss" style="text-align: center;" id="Skeletal_muscle_mass_percent"></p>
+
+                    <p class="p_str" id="man_target">Коэффициент пропорциональности</p>
+                    <p class="p_result_weight_loss" style="text-align: center; margin-bottom: 30px;" id="Proportionality_factor"></p>
+                    <p class="p_result_weight_loss" style="text-align: center; margin-bottom: 30px;" id="woman_parametr"></p>
+                    
+                </div>
+            </div>
+        </form>
+        <button  onclick="saveAsImage()" class="shine-button1" style="display: block; margin: 15px auto;">Сохранить</button>
+        <button  class="button_clear" type="reset" onclick="clear_form()">Очистить все поля</button>
+        <p class="p_dimension" style="color: #c0bfbf; margin: 5px;">Измерение компонентного состава тела проводится по методике, разработанной ведущим специалистом в области функциональной и спортивной антропологии, доктором биологических наук Мартиросовым Эдуардом Георгиевичем</p>
+        <p class="p_dimension" style="color: #c0bfbf; margin: 5px;">Для расчета нормы каллорий используется формула Харриса-Бенедикта</p>
+    </div>
+</section>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="scriptKalkulatir.js"></script>
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+   
+    
+    
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

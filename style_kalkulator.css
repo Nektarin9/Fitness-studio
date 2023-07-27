@@ -1,0 +1,1694 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:ital,wght@0,400;0,700;0,900;1,1000&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(igmp_index/Фон1.jpeg);
+    /* Устанавливает фоновый цвет, который будет отображаться, пока загружается фоновое изображение */
+    background-color: #2c2b2b;
+}
+::-moz-selection {
+    background-color: #b99d8a;
+    color: #ffffff;
+}
+::selection {
+    background-color: #b99d8a;
+    color: #ffffff;
+}
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+    margin: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+
+}
+a, u {
+    text-decoration: none;
+  }
+/* Шапка */
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 110px;
+  background-color: #1e1f1fa2;
+  
+}
+
+.wrapper_header {
+ max-width: 85%;
+ margin: 5px auto 5px auto;
+}
+
+.rainbow-text {
+font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+
+}
+.rainbow-text .block-line > span {
+display: inline-block;
+  text-align: center;
+}
+.block-line {
+background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180,#D504A6,#7fed12,#21ed3d,#10deb1,#1fdbf0,#1ce0f6,#28d4d1,#f8fb29,#ed6d11,#d504a8);
+color: #0000;
+-webkit-background-clip: text;
+background-clip: text;
+}
+h1 {
+  margin-top: 25px;
+  margin-left: 25px;
+  font-size: 38px;
+  font-weight: 800;
+}
+.h1_with {
+  display: none;
+}
+.h1_with2 {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper_cont {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+  padding-right: 50px;
+  
+}
+
+.logo_fon {
+  width: 95px;
+  height: 95px;
+  border-radius: 100px;
+  margin-top: 7px;
+}
+.logo_size {
+  display: block;
+  margin: 0 auto;
+  width: 95px;
+  height: 80px;
+}
+
+
+.logo_contakr {
+  margin-top: 35px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+.indents_menu {
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+
+.p_iphon {
+  color: #FFCB9A;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.p_iphon:hover {
+  color: rgba(255, 255, 255, 0.842);
+  transition: 0.4s;
+}
+
+.wrapper_iphon {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.a_iphon1 {
+  color: #FFCB9A;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.a_iphon1:hover {
+  color: rgba(255, 255, 255, 0.842);
+  transition: 0.4s;
+}
+.img_size {
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+}
+
+.igm_size_margin {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+                                  /* Тело страницы */
+
+
+
+
+
+
+
+                                    /* Тело страницы */
+
+.container {
+    margin: 0 auto;
+    background-image: cover;
+    padding-bottom: 10px;
+}
+
+.block_indent {
+    padding-top: 180px;
+}
+
+.header_block {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 30px;
+    width: 600px;
+    height: 1950px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+.padding {
+  padding: 0px;
+}
+            /* Калькулятор */
+
+.h2_text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: #fe6637;
+    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.p_headlines {
+    color: #000000;
+    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.p_headlines1 {
+  text-align: center;
+  color: #000000;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+/* Кнопки мужской\женский */
+
+.flex_button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.button_gender {
+  width: 300px;
+  height: 60px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 35px;
+  font-weight: 100;
+  color: #000000;
+  border: solid 1px coral;
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+
+.button_gender:focus {
+  background-color: coral;
+  color: #ffffff;
+  transform: 0.4s;
+}
+
+button.active {
+  background-color: coral;
+  color: #ffffff;
+}
+/* Ввод имени */
+.containet_name {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input_name {
+  margin: 0 auto;
+  width: 220px;
+  height: 40px;
+  font-size: 30px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  color: coral;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 2px #000000;
+  outline: none;
+  transition: 0.4s;
+}
+.input_name:focus {
+  border: solid 2px coral;
+  background-color: coral;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.input_name:focus::placeholder {
+  color: #ffffff;
+}
+
+/* Возраст вес и рост*/
+
+.flex_options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.p_dimension{
+  text-align: center;
+  color: #4d4c4c;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.input_options {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 25px;
+  font-weight: 800;
+  outline: none;
+  transform: 0.4s;
+}
+.input_options:focus {
+  border: solid 1px coral;
+  background-color: coral;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+
+.number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+  
+}
+.number input[type="number"] {
+	display: block;
+	height: 40px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+  
+}
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 20px;
+	font-weight: 600;
+}
+.number-minus:active {
+  color: coral;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-left: 1px solid #ddd;
+	font-size: 20px;
+	font-weight: 600;
+}
+.number-plus:active {
+  color: coral;
+}
+
+
+/* Физическая активность*/
+.container_headlines {
+  margin-bottom: 10px;
+}
+.p_active {
+  color: #4d4c4c;
+  margin-left: 5px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 20px;
+}
+.rad-label {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background: #a0a0a027;
+}
+
+.rad-input {
+ 
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  background: linear-gradient(to right bottom, #ff5100, #ffae00);
+  position: relative;
+}
+
+.rad-design::before {
+  content: '';
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: #a6a6a6;
+  transform: scale(1.1);
+  transition: .3s;
+  
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  color: #000000;
+  margin-left: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  transition: .3s;
+}
+
+.rad-input:checked~.rad-text {
+  color: coral;
+}
+
+
+.p_target {
+  color: #4d4c4c;
+  margin-left: 5px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center; 
+  border-top: solid 2px;
+}
+
+
+/* Кнопка Расчет*/
+
+.flex_button_calculation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button_calculation {
+  width: 300px;
+  height: 60px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 25px;
+  font-weight: 100;
+  border: solid 1px coral;
+  cursor:pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  background: coral;
+  transition: 0.4s;
+}
+
+.button_calculation:hover {
+  background: #e94003;
+  border: solid 1px #e94003;
+  transform: 0.4s;
+}
+
+/* Кнопка Очистить поля*/
+
+.button_clear {
+  display: block;
+  border: none;
+  background: none;
+  cursor:pointer;
+  margin: 0 auto;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 25px;
+  font-weight: 800;
+  color: #ff0000;
+  transition: 0.3s;
+}
+.button_clear:hover {
+  color: #ff0156;
+  transform: 0.3s;
+}
+
+
+
+
+
+  /* button */
+  
+  .shine-button1 {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 30px;
+    margin: 15px 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+    border: 2px solid #fe6637;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+  }
+  .shine-button1:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 88px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -85px;
+    transform: skewX(-45deg);
+  }
+  .shine-button1:hover {
+    background: #fe6637;
+    color: #fff;
+  }
+  .shine-button1:hover:before {
+    left: 180px;
+    transition: .3s ease-in-out;
+  }
+
+
+.p_error {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 35px;
+  color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*** Формируем стили модального окна ***/
+ 
+ .popup {
+  margin: 50px auto;
+  padding-bottom: 100px;
+  background-color: #000000;
+  border-radius: 20px;
+  width: 850px;
+  height: 100%;
+  
+ 
+  }
+  
+.form_flex {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 100%;
+}
+
+.form_flex_kkal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+  
+.p_str {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #eeeeee;
+}
+.p_str_dimension {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 20px;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+.p_IMT {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 35px;
+  
+}
+
+.p_result_weight_loss {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 27px;
+  color: #2bff00;
+}
+.p_result_weight_maintenance {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 27px;
+  color: #ffee00;
+}
+
+.p_result_weight_gain {
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 27px;
+  color: #f55c2e;
+}
+
+
+.flex_bgu {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bgy_icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  
+}
+
+.input_days {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 90px;
+  height: 60px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 27px;
+  color: #000000;
+  outline: none;
+  border: 1px solid;
+  border-radius: 5px;
+  transform: 0.4s;
+}
+.input_days:focus {
+  background-color: coral;
+  color: #ffffff;
+  border: 1px solid coral;
+  transition: 0.4s;
+}
+
+/*** Расчет % жира в организме-***/
+.flex_percent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.container_percent {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.input_percent {
+  text-align: center;
+  width: 140px;
+  height: 35px;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 25px;
+  color: #000000;
+  outline: none;
+  border: 1px solid;
+  border-radius: 4px;
+  transform: 0.4s;
+}
+.input_percent:focus {
+  background-color: coral;
+  color: #ffffff;
+  border: 1px solid coral;
+  transition: 0.4s;
+}
+
+.p_percent {
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 14px;
+  font-weight: 100;
+}
+.p_percent2 {
+  color: coral;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center; 
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Адаптивность под разные форматы экрана */
+
+
+@media(max-width:1800px) {
+    
+    /* Шапка */
+    h1 {
+        margin-top: 25px;
+        margin-left: 15px;
+        font-size: 33px;
+      }
+}
+                                        
+@media(max-width:1700px) {
+    /* Шапка */
+    .wrapper_header {
+      max-width: 95%;
+   }
+   .wrapper_cont {
+      margin-right: 20px;
+   }
+  h1 {
+      font-size: 30px;
+    }
+  .p_iphon {
+      font-size: 17px;
+  }
+  .a_iphon1 {
+      font-size: 15px;
+      
+  }
+  .img_size {
+      width: 25px;
+      height: 25px;
+  }
+}
+                        
+
+
+
+
+@media(max-width:1350px) {
+    
+
+/* Шапка */
+    
+   .wrapper_header {
+        max-width: 94%;
+    }
+    h1 {
+        margin-top: 35px;
+        font-size: 18px;
+    }
+      .p_iphon {
+        font-size: 15px;
+    }
+    .a_iphon1 {
+        font-size: 14px;
+        
+    }
+    .img_size {
+        width: 23px;
+        height: 23px;
+    }
+    .logo_fon {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
+    .logo_size {
+        width: 77px;
+        height: 70px;
+    }
+  }
+
+
+@media(max-width:1015px) {
+  /* Форма */
+  .popup {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .p_str {
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .p_IMT {
+    font-size: 22px;
+    
+  }
+  .p_result_weight_loss {
+    font-size: 17px;
+  }
+  .p_result_weight_maintenance {
+    font-size: 17px;
+  }
+  .p_result_weight_gain {
+    font-size: 17px;
+  }
+  .p_str_dimension {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .bgy_icon {
+    width: 25px;
+    height: 25px;
+    
+  }
+    /* Шапка */
+    header {
+      height: 80px;
+  }
+  .logo_fon {
+      width: 80px;
+      height: 80px;
+      margin-top: 5px;
+  }
+  .wrapper_header {
+      max-width: 95%;
+      margin-top: 0px;
+   }
+  
+  h1 {
+      display: none;
+    }
+    .h1_with {
+      display:block;
+      margin-top: 25px;
+      margin-left: 15px;
+      font-size: 22px;
+      font-weight: 800;
+  }
+  .block-line {
+      background-image: linear-gradient(90deg,#02ff17,#05ffd5,#13bcda,#1FDBF0,#10c6cc,#10c6cc,#10c6cc,#10c6cc,#0b7519,#ebe71a,#ed11b6,#D504A6,#ed12b6);
+  }
+    .p_iphon {
+      font-size: 17px;
+  }
+  .logo_size {
+      width: 85px;
+      height: 70px;
+  }
+ 
+    
+    
+}
+
+
+
+
+
+
+@media(max-width:750px) {
+    /* Страница 1 */
+  .header_block {
+    padding: 10px;
+    width: 90%;
+    height: 1870px;
+  }
+  .button_gender {
+    width: 180px;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+              /* Калькулятор */
+  
+  .h2_text1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+  }
+  .p_headlines {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+  .p_headlines1 {
+    font-size: 24px;
+  }
+  .p_dimension{
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  
+  .input_name {
+    width: 190px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .rad-text {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .p_active {
+    font-size: 15px;
+  }
+  .flex_options {
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .number {
+    width: 90px;
+  }
+  .number-minus {
+    display: none;
+  }
+  .number-plus {
+    display: none;
+  }
+  .input_options {
+
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .rad-design {
+    width: 18px;
+    height: 18px;
+  }
+  .rad-label {
+    padding: 10px 5px;
+  }
+  .p_target {
+    margin-left: 0px;
+    font-size: 17px;
+    border-top: solid 1px;
+  }
+  .input_days {
+    width: 70px;
+    height: 40px;
+    font-size: 24px;
+  }
+  .p_percent2 {
+    font-size: 22px;
+  }
+
+/* Кнопки мужской\женский */
+
+.flex_button {
+  margin-bottom: 5px;
+}
+
+    
+    /* Шапка */
+    .wrapper_header {
+      max-width: 95%;
+   }
+   .h1_with {
+      display: none;
+  }
+  .wrapper_cont {
+      padding-right: 70px;
+  }
+  .logo_size {
+      margin-top: 3px;
+      width: 75px;
+      height: 65px;
+  }
+  
+  .p_iphon {
+      font-size: 15px;
+  }
+  .indents_menu {
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+  .a_iphon1 {
+      font-size: 12px;
+      
+  }
+  .img_size {
+      width: 21px;
+      height: 21px;
+  }
+}
+
+
+@media(max-width:500px) {
+     /* Страница 1 */
+  .header_block {
+    padding: 0px;
+    width: 100%;
+    height: 1820px;
+    border-radius: 0px;
+  }
+  .block_indent {
+    padding-top: 120px;
+  }
+  .padding {
+    padding: 10px;
+  }
+  .number {
+    width: 80px;
+  }
+
+              /* Калькулятор */
+  
+  .p_headlines {
+    font-size: 25px;
+  }
+  
+ 
+  .p_headlines1 {
+    font-size: 17px;
+  }
+  
+  
+  .p_error {
+    font-size: 25px;
+  }
+  .shine-button1 {
+    padding: 10px 20px;
+    margin: 10px 15px;
+    font-size: 25px;
+    
+  }
+  .rad-text {
+    margin-left: 7px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .input_percent {
+    width: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 30px;
+    
+  }
+   /* Форма */
+  
+  .p_str {
+    font-size: 22px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  .p_IMT {
+    font-size: 18px;
+    
+  }
+  .p_result_weight_loss {
+    font-size: 15px;
+  }
+  .p_result_weight_maintenance {
+    font-size: 15px;
+  }
+  .p_result_weight_gain {
+    font-size: 15px;
+  }
+  .p_str_dimension {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .bgy_icon {
+    display: none;
+    
+  }
+    /* Шапка */
+    header {
+      height: 90px;
+  }
+  .wrapper_header {
+      max-width: 99%;
+   }
+  .wrapper_cont {
+      margin-top: 15px;
+      padding-right: 0px;
+     
+  }
+  .wrapper_iphon {
+      margin-top: 20px;
+      margin-right: 20px;
+  }
+  .wrapper {
+      justify-content: flex-start;
+  }
+  .logo_size {
+      margin-top: 10px;
+      width: 70px;
+      height: 65px;
+  }
+  .logo_fon {
+      width: 60px;
+      height: 80px;
+      margin-left: 3px;
+      margin-top: 3px;
+      
+  }
+}
+
+
+
+
+
+@media(max-width:400px) {
+    /* Страница 1 */
+    .header_block {
+      height: 1840px;
+    }
+    .button_gender {
+      width: 150px;
+      height: 50px;
+      font-size: 25px;
+    }
+ 
+   
+    
+ 
+}
+
+@media(max-width:380px) {
+  /* Шапка */
+    
+  .igm_size_margin {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media(max-width:360px) {
+    /* Страница 1 */
+    .header_block {
+      height: 1950px;
+    }
+    .padding {
+      padding: 5px;
+    }
+    /* Страница 1 */
+    .button_gender {
+      width: 130px;
+      font-size: 20px;
+    }
+  /* Шапка */
+  .p_iphon {
+    font-size: 12px;
+}
+.img_size {
+    width: 18px;
+    height: 18px;
+}
+.logo_fon {
+    width: 50px;
+    margin-left: 3px;
+    margin-top: 10px;
+    
+}
+.logo_size {
+    width: 50px;
+    height: 45px;
+}
+  
+}
+@media(max-width:330px) {
+  /* Страница 1 */
+  .header_block {
+    height: 2400px;
+  }
+ 
+  
+}
+
+
+
+/*------------------------------БОКОВАЯ ПАНЕЛЬ-------------------------------------*/
+.nav {
+  /*  ширна произвольная, не стесняйтесь экспериментировать */
+  width: 400px;
+  min-width: 320px;
+  /* фиксируем и выставляем высоту панели на максимум */
+  height: 800px;
+  position: fixed;
+  top: 20px;
+  bottom: 0;
+  margin: 0;
+  /* сдвигаем (прячем) панель относительно правого края страницы */
+  right: -480px;
+  /* внутренние отступы */
+  padding: 15px 20px;
+  /* плавный переход смещения панели */
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  transition: right 0.3s;
+  /* определяем цвет фона панели */
+  background: #131313ec;
+  /* поверх других элементов */
+  z-index: 2001;
+  border-radius: 25px;
+  border: solid 1px; color: #9dff00;
+  
+}
+
+
+/**
+* Кнопка переключения панели
+* тег <label>
+*/
+
+.nav-toggle {
+  /* абсолютно позиционируем */
+  position: absolute;
+  /* относительно правого края панели */
+  right: 510px;
+  /* отступ от верхнего края панели */
+  top: 10px;
+  /* внутренние отступы */
+  padding: 0.5em;
+  /* определяем цвет фона переключателя
+   * чаще вчего в соответствии с цветом фона панели
+  */
+  background: inherit;
+  /* цвет текста */
+  
+  /* вид курсора */
+  cursor: pointer;
+  /* размер шрифта */
+  font-size: 25px;
+  line-height: 1;
+  /* всегда поверх других элементов страницы */
+  z-index: 2001;
+  /* анимируем цвет текста при наведении */
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+  border-radius: 15px;
+  border: solid 1px;
+  
+}
+
+
+/* определяем текст кнопки 
+* символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+
+.nav-toggle:after {
+  content: 'Меню';
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-style: normal;
+  text-decoration: none;
+  
+}
+
+
+/* цвет текста при наведении */
+
+.nav-toggle:hover {
+  color: #f4f4f4;
+}
+
+
+/**
+* Скрытый чекбокс (флажок)
+* невидим и недоступен :)
+* имя селектора атрибут флажка
+*/
+
+[id='nav-toggle'] {
+  position: absolute;
+  display: none;
+}
+
+
+/**
+* изменение положения переключателя 
+* при просмотре на мобильных устройствах
+* когда навигация раскрыта, распологаем внутри панели
+*/
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+  left: auto;
+  right: 30px;
+  top: 1em;
+  
+}
+
+
+/**
+* Когда флажок установлен, открывается панель
+* используем псевдокласс:checked
+*/
+
+[id='nav-toggle']:checked ~ .nav {
+  right: 0;
+  box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -moz-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -webkit-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+  overflow-y: auto;
+}
+
+
+
+
+
+/*
+* изменение символа переключателя,
+* привычный крестик (MULTIPLICATION X), 
+* вы можете испльзовать любой другой значок
+*/
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+  content: '\2715';
+}
+
+
+
+
+
+
+
+/**
+* Формируем стиль заголовка (логотип) панели 
+*/
+
+.nav h2 {
+  width: 90%;
+  padding: 0;
+  margin: 10px 0;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  text-align: center;
+  color: #9dff00;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.3em;
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  -ms-transform: scale(0.1, 0.1);
+  -moz-transform: scale(0.1, 0.1);
+  -webkit-transform: scale(0.1, 0.1);
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transition: opacity 0.8s, transform 0.8s;
+  -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+  -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+}
+
+.nav h2 a {
+  color: #dadada;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/*плавное появление заголовка (логотипа) при раскрытии панели */
+
+[id='nav-toggle']:checked ~ .nav h2 {
+  opacity: 1;
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+}
+
+
+/**
+* формируем непосредственно само меню
+* используем неупорядоченный список для пунктов меню
+* прикрутим трансфомации и плавные переходы
+*/
+
+.nav > ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav > ul > li {
+  line-height: 2;
+  opacity: 0;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+  -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+  -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+  transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='nav-toggle']:checked ~ .nav > ul > li {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+/* определяем интервалы появления пунктов меню */
+
+.nav > ul > li:nth-child(2) {
+  -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+  transition: opacity .5s .2s, transform .5s .2s;
+}
+
+.nav > ul > li:nth-child(3) {
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, transform .5s .3s;
+}
+
+.nav > ul > li:nth-child(4) {
+  -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+  transition: opacity .5s .4s, transform .5s .4s;
+}
+
+.nav > ul > li:nth-child(5) {
+  -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+  transition: opacity .5s .5s, transform .5s .5s;
+}
+
+.nav > ul > li:nth-child(6) {
+  -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+  transition: opacity .5s .6s, transform .5s .6s;
+}
+
+.nav > ul > li:nth-child(7) {
+  -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+  transition: opacity .5s .7s, transform .5s .7s;
+}
+
+
+/**
+* оформление ссылок пунктов меню
+*/
+
+.nav > ul > li > a {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-weight: 800;
+  font-size: 24px;
+  color: #ffffff;
+  width: 100%;
+  text-decoration: none;
+  /* плавный переход */
+  -webkit-transition: color .5s ease, padding .5s ease;
+  -moz-transition: color .5s ease, padding .5s ease;
+  transition: color .5s ease, padding .5s ease;
+}
+
+
+/**
+* состояние ссылок меню при наведении
+*/
+
+.nav > ul > li > a:hover,
+.nav > ul > li > a:focus {
+  color: white;
+  padding-left: 15px;
+}
+
+
+/**
+* линия подчеркивания ссылок меню
+*/
+
+.nav > ul > li > a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  -webkit-transition: width 0s ease;
+  transition: width 0s ease;
+}
+
+.nav > ul > li > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #9dff00;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+
+/**
+* анимируем линию подчеркивания 
+* ссылок при наведении
+*/
+
+.nav > ul > li > a:hover:before {
+  width: 0%;
+  background: #ffc400;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.nav > ul > li > a:hover:after {
+  width: 0%;
+  background: transparent;
+  -webkit-transition: width 0s ease;
+  transition: width 0s ease;
+}
+
+@media (max-width:1700px) {
+  .nav {
+      top: 18px;
+      /* сдвигаем (прячем) панель относительно правого края страницы */
+      right: -450px;
+    
+  }
+  
+  
+  /**
+   * Кнопка переключения панели
+   * тег <label>
+   */
+  
+  .nav-toggle {
+      /* абсолютно позиционируем */
+      position: absolute;
+      /* относительно правого края панели */
+      right: 460px;
+      /* отступ от верхнего края панели */
+      top: 20px;
+      
+      /* размер шрифта */
+      font-size: 20px;
+      
+  }
+}
+
+
+@media (max-width:1350px) {
+
+  .nav-toggle { 
+      /* размер шрифта */
+      font-size: 18px;
+      top: 18px;
+  }
+
+}
+@media (max-width:1015px) {
+
+  .nav-toggle { 
+      top: 5px;
+  }
+
+}
+@media (max-width:500px) {
+  .nav {
+      top: 18px;
+      /* сдвигаем (прячем) панель относительно правого края страницы */
+      right: -470px;
+     /*  ширна произвольная, не стесняйтесь экспериментировать */
+     width: 280px;
+     min-width: 0px;
+     /* фиксируем и выставляем высоту панели на максимум */
+     height: 550px;
+  
+  }
+  /**
+   * Кнопка переключения панели
+   * тег <label>
+   */
+  
+  .nav-toggle {
+      /* отступ от верхнего края панели */
+      top: -8px;
+      right: 475px;
+      font-size: 20px;
+  }
+  .nav > ul > li > a {
+      font-size: 17px;
+  }
+  .nav h2 {
+      width: 100%;
+      margin: 15px 0;
+      font-size: 20px;
+  }
+ 
+}
+
+
+@media (max-width: 380px) {
+  .nav {
+      top: 19px;
+      /* сдвигаем (прячем) панель относительно правого края страницы */
+      right: -455px;
+    
+  }
+  .nav-toggle {
+      /* размер шрифта */
+      font-size: 17px;
+      right: 460px;
+  }
+}
+@media (max-width: 360px) {
+  .nav {
+      width: 260px;
+      top: 23px;
+      /* сдвигаем (прячем) панель относительно правого края страницы */
+      right: -440px;
+      height: 530px;
+  }
+  
+}
