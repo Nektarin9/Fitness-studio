@@ -52,7 +52,7 @@ header {
     position: fixed;
     z-index: 3;
     width: 100%;
-    height: 110px;
+    height: 130px;
     background-color: #1e1f1fa2;
     
 }
@@ -63,6 +63,8 @@ header {
 }
 
 .rainbow-text {
+    display: flex;
+    align-items: center;
 	font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
 	
 }
@@ -77,10 +79,10 @@ header {
 	background-clip: text;
 }
 h1 {
-    margin-top: 25px;
     margin-left: 25px;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 800;
+    margin-top: 7px;
   }
 .h1_with {
     display: none;
@@ -92,20 +94,23 @@ h1 {
 .wrapper {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .wrapper_cont {
     display: flex;
     align-items: center;
+    height: 130px;
     margin-left: auto; 
-    padding-right: 50px;
+    padding-right: 20px;
     
 }
 
 .logo_fon {
+    display: flex;
     width: 95px;
     height: 95px;
     border-radius: 100px;
-    margin-top: 7px;
+    
 }
 .logo_size {
     display: block;
@@ -149,6 +154,8 @@ h1 {
     align-items: center;
 }
 .a_iphon1 {
+    display: flex;
+    justify-content: center;
     color: #FFCB9A;
     font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
     font-style: normal;
@@ -169,8 +176,8 @@ h1 {
 }
 
 .igm_size_margin {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .p_time {
     text-align: center;
@@ -584,9 +591,8 @@ h1 {
     }
     /* Шапка */
     h1 {
-        margin-top: 25px;
         margin-left: 15px;
-        font-size: 33px;
+        font-size: 24px;
       }
 }
                                         
@@ -596,10 +602,10 @@ h1 {
         max-width: 95%;
      }
      .wrapper_cont {
-        margin-right: 20px;
+        margin-right: 25px;
      }
     h1 {
-        font-size: 30px;
+        font-size: 22px;
       }
     .p_iphon {
         font-size: 17px;
@@ -612,7 +618,9 @@ h1 {
         width: 25px;
         height: 25px;
     }
-
+    .p_time {
+        font-size: 13px;
+    }
 
 
 }
@@ -627,8 +635,8 @@ h1 {
         max-width: 94%;
     }
     h1 {
-        margin-top: 35px;
-        font-size: 18px;
+        
+        font-size: 16px;
     }
       .p_iphon {
         font-size: 15px;
@@ -644,7 +652,7 @@ h1 {
     .logo_fon {
         width: 80px;
         height: 80px;
-        margin-top: 10px;
+        
     }
     .logo_size {
         width: 77px;
@@ -744,12 +752,12 @@ h1 {
     
     /* Шапка */
     header {
-        height: 80px;
+        height: 100px;
     }
     .logo_fon {
         width: 80px;
         height: 80px;
-        margin-top: 5px;
+        
     }
     .wrapper_header {
         max-width: 95%;
@@ -761,16 +769,16 @@ h1 {
       }
       .h1_with {
         display:block;
-        margin-top: 25px;
-        margin-left: 15px;
-        font-size: 22px;
+        margin-top: 0px;
+        margin-left: 20px;
+        font-size: 20px;
         font-weight: 800;
     }
     .block-line {
         background-image: linear-gradient(90deg,#02ff17,#05ffd5,#13bcda,#1FDBF0,#10c6cc,#10c6cc,#10c6cc,#10c6cc,#0b7519,#ebe71a,#ed11b6,#D504A6,#ed12b6);
     }
       .p_iphon {
-        font-size: 17px;
+        font-size: 16px;
     }
     .logo_size {
         width: 85px;
@@ -779,6 +787,9 @@ h1 {
     .container {
         background-color: #000000ab;
         height: 3150px;
+    }
+    .wrapper_cont {
+        height: 100px;
     }
      /* Страница 2 */
      
@@ -867,7 +878,7 @@ h1 {
         display: none;
     }
     .wrapper_cont {
-        padding-right: 70px;
+        padding-right: 25px;
     }
     .logo_size {
         margin-top: 3px;
@@ -876,7 +887,7 @@ h1 {
     }
     
     .p_iphon {
-        font-size: 15px;
+        font-size: 14px;
     }
     .indents_menu {
         margin-left: 5px;
@@ -890,6 +901,9 @@ h1 {
         width: 21px;
         height: 21px;
     }
+    .p_time {
+        font-size: 11px;
+    }
     /* Слайдер */
     .container_slider_css {
         width: 100%;
@@ -899,39 +913,41 @@ h1 {
 
 @media(max-width:500px) {
     /* Шапка */
-    header {
-        height: 90px;
-    }
+  
     .wrapper_header {
         max-width: 99%;
      }
     .wrapper_cont {
-        margin-top: 15px;
+        
         padding-right: 0px;
        
     }
     .wrapper_iphon {
-        margin-top: 20px;
-        margin-right: 20px;
+        
+        margin-right: 0px;
     }
     .wrapper {
-        justify-content: flex-start;
+       justify-content: center;
+        
     }
     .logo_size {
-        margin-top: 10px;
-        width: 70px;
-        height: 65px;
+        
+        width: 60px;
+        height: 50px;
     }
     .logo_fon {
         width: 60px;
-        height: 80px;
+        height: 50px;
         margin-left: 3px;
-        margin-top: 3px;
-        
+       
     }
     
-   
-     
+   .a_iphon1 {
+    font-size: 12px;
+   }
+   .p_time {
+    font-size: 10px;
+   }
    
     /* Страница 2 */
     .block_pers_workout {
@@ -1080,6 +1096,9 @@ h1 {
         margin-left: 8px;
         margin-right: 8px;
     }
+    .p_time {
+        font-size: 9px;
+    }
 }
 @media(max-width:367px) {
     /* Страница 2 */
@@ -1127,7 +1146,7 @@ h1 {
     .logo_fon {
         width: 50px;
         margin-left: 3px;
-        margin-top: 10px;
+        
         
     }
     .logo_size {
@@ -2371,7 +2390,7 @@ h1 {
 @media (max-width:1015px) {
 
     .nav-toggle { 
-        top: 5px;
+        top: -5px;
     }
 
 }
@@ -2396,7 +2415,8 @@ h1 {
         /* отступ от верхнего края панели */
         top: -8px;
         right: 475px;
-        font-size: 20px;
+        font-size: 18px;
+        border-radius: 12px;
     }
     .nav > ul > li > a {
         font-size: 17px;
@@ -2419,7 +2439,7 @@ h1 {
     }
     .nav-toggle {
         /* размер шрифта */
-        font-size: 17px;
+        font-size: 16px;
         right: 460px;
     }
 }
@@ -2428,10 +2448,14 @@ h1 {
         width: 260px;
         top: 23px;
         /* сдвигаем (прячем) панель относительно правого края страницы */
-        right: -440px;
+        
         height: 530px;
     }
-    
+    .nav-toggle {
+        /* размер шрифта */
+        font-size: 14px;
+        
+    }
 }
 
 
