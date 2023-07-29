@@ -39,130 +39,143 @@ a, u {
   }
 /* Шапка */
 header {
-    position: fixed;
-    z-index: 3;
-    width: 100%;
-    height: 110px;
-    background-color: #1e1f1fa2;
-    
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 130px;
+  background-color: #1e1f1fa2;
+  
 }
 
 .wrapper_header {
-   max-width: 85%;
-   margin: 5px auto 5px auto;
+ max-width: 85%;
+ margin: 5px auto 5px auto;
 }
 
 .rainbow-text {
-	font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
-	
+  display: flex;
+  align-items: center;
+font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+
 }
 .rainbow-text .block-line > span {
-	display: inline-block;
-    text-align: center;
+display: inline-block;
+  text-align: center;
 }
 .block-line {
-	background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180,#D504A6,#7fed12,#21ed3d,#10deb1,#1fdbf0,#1ce0f6,#28d4d1,#f8fb29,#ed6d11,#d504a8);
-	color: #0000;
-	-webkit-background-clip: text;
-	background-clip: text;
+background-image: linear-gradient(90deg,#80ED12,#04D68D,#10DBDE,#1FDBF0,#1CF69B,#D3EB67,#FBCE29,#ED1180,#D504A6,#7fed12,#21ed3d,#10deb1,#1fdbf0,#1ce0f6,#28d4d1,#f8fb29,#ed6d11,#d504a8);
+color: #0000;
+-webkit-background-clip: text;
+background-clip: text;
 }
 h1 {
-    margin-top: 25px;
-    margin-left: 25px;
-    font-size: 38px;
-    font-weight: 800;
-  }
+  margin-left: 25px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 7px;
+}
 .h1_with {
-    display: none;
+  display: none;
 }
 .h1_with2 {
-    display: none;
+  display: none;
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .wrapper_cont {
-    display: flex;
-    align-items: center;
-    margin-left: auto; 
-    padding-right: 50px;
-    
+  display: flex;
+  align-items: center;
+  height: 130px;
+  margin-left: auto; 
+  padding-right: 20px;
+  
 }
 
 .logo_fon {
-    width: 95px;
-    height: 95px;
-    border-radius: 100px;
-    margin-top: 7px;
+  display: flex;
+  width: 95px;
+  height: 95px;
+  border-radius: 100px;
+  
 }
 .logo_size {
-    display: block;
-    margin: 0 auto;
-    width: 95px;
-    height: 80px;
+  display: block;
+  margin: 0 auto;
+  width: 95px;
+  height: 80px;
 }
 
 
 .logo_contakr {
-    margin-top: 35px;
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
+  margin-top: 35px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
 }
 .indents_menu {
-    margin-left: 15px;
-    margin-right: 15px;
-    
+  margin-left: 15px;
+  margin-right: 15px;
+  
 }
 
 .p_iphon {
-    color: #FFCB9A;
-    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.4s;
+  color: #FFCB9A;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
 }
 
 .p_iphon:hover {
-    color: rgba(255, 255, 255, 0.842);
-    transition: 0.4s;
+  color: rgba(255, 255, 255, 0.842);
+  transition: 0.4s;
 }
 
 .wrapper_iphon {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .a_iphon1 {
-    color: #FFCB9A;
-    font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  color: #FFCB9A;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
 }
 .a_iphon1:hover {
-    color: rgba(255, 255, 255, 0.842);
-    transition: 0.4s;
+  color: rgba(255, 255, 255, 0.842);
+  transition: 0.4s;
 }
 .img_size {
-    display: flex;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
 }
 
 .igm_size_margin {
-    margin-left: 12px;
-    margin-right: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
+.p_time {
+  text-align: center;
+  color: #FFCB9A;
+  font-family: Nunito, 'Times New Roman', sans-serif, Times, serif, Georgia;
+  font-size: 15px;
+  font-weight: 500;
+}
 
 
 
@@ -564,43 +577,48 @@ h1 {
 
 @media(max-width:1800px) {
     
-    /* Шапка */
-    h1 {
-        margin-top: 25px;
-        margin-left: 15px;
-        font-size: 33px;
-      }
+ /* Шапка */
+ h1 {
+  margin-top: 25px;
+  margin-left: 15px;
+  font-size: 33px;
+}
 }
                                         
 @media(max-width:1700px) {
-    /* Шапка */
-    .wrapper_header {
-        max-width: 95%;
-     }
-     .wrapper_cont {
-        margin-right: 20px;
-     }
-    h1 {
-        font-size: 30px;
-      }
-    .p_iphon {
-        font-size: 17px;
-    }
-    .a_iphon1 {
-        font-size: 15px;
-        
-    }
-    .img_size {
-        width: 25px;
-        height: 25px;
-    }
+   /* Шапка */
+   .wrapper_header {
+    max-width: 95%;
+ }
+ .wrapper_cont {
+    margin-right: 25px;
+ }
+h1 {
+    font-size: 22px;
+  }
+.p_iphon {
+    font-size: 17px;
 }
+.a_iphon1 {
+    font-size: 15px;
+    
+}
+.img_size {
+    width: 25px;
+    height: 25px;
+}
+.p_time {
+    font-size: 13px;
+}
+}
+
                         
 
 
 
 
 @media(max-width:1350px) {
+
     /* Страница 1 */
     .header_block {
         width: 900px;
@@ -632,34 +650,34 @@ h1 {
 
 
     
-                                    /* Шапка */
-    .wrapper_header {
-        max-width: 94%;
-    }
-    h1 {
-        margin-top: 35px;
-        font-size: 18px;
-    }
-      .p_iphon {
-        font-size: 15px;
-    }
-    .a_iphon1 {
-        font-size: 14px;
-        
-    }
-    .img_size {
-        width: 23px;
-        height: 23px;
-    }
-    .logo_fon {
-        width: 80px;
-        height: 80px;
-        margin-top: 10px;
-    }
-    .logo_size {
-        width: 77px;
-        height: 70px;
-    }
+     /* Шапка */
+  .wrapper_header {
+    max-width: 94%;
+}
+h1 {
+    
+    font-size: 16px;
+}
+  .p_iphon {
+    font-size: 15px;
+}
+.a_iphon1 {
+    font-size: 14px;
+    
+}
+.img_size {
+    width: 23px;
+    height: 23px;
+}
+.logo_fon {
+    width: 80px;
+    height: 80px;
+    
+}
+.logo_size {
+    width: 77px;
+    height: 70px;
+}
 }
 @media(max-width:1200px) {
     /* Страница 1 */
@@ -670,6 +688,10 @@ h1 {
 
 @media(max-width:1015px) {
     /* Страница 1 */
+    .container {
+      background-color: #000000ab;
+      height: 4000px;
+  }
     .header_block {
         width: 700px;
         height: 780px;
@@ -696,44 +718,45 @@ h1 {
     }
     
   
-    /* Шапка */
-    header {
-        height: 80px;
+     /* Шапка */
+     header {
+      height: 100px;
+  }
+  .logo_fon {
+      width: 80px;
+      height: 80px;
+      
+  }
+  .wrapper_header {
+      max-width: 95%;
+      margin-top: 0px;
+   }
+  
+  h1 {
+      display: none;
     }
-    .logo_fon {
-        width: 80px;
-        height: 80px;
-        margin-top: 5px;
-    }
-    .wrapper_header {
-        max-width: 95%;
-        margin-top: 0px;
-     }
+    .h1_with {
+      display:block;
+      margin-top: 0px;
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: 800;
+  }
+  .block-line {
+      background-image: linear-gradient(90deg,#02ff17,#05ffd5,#13bcda,#1FDBF0,#10c6cc,#10c6cc,#10c6cc,#10c6cc,#0b7519,#ebe71a,#ed11b6,#D504A6,#ed12b6);
+  }
+    .p_iphon {
+      font-size: 16px;
+  }
+  .logo_size {
+      width: 85px;
+      height: 70px;
+  }
+  
+  .wrapper_cont {
+      height: 100px;
+  }
     
-    h1 {
-        display: none;
-      }
-      .h1_with {
-        display:block;
-        margin-top: 25px;
-        margin-left: 15px;
-        font-size: 22px;
-        font-weight: 800;
-    }
-    .block-line {
-        background-image: linear-gradient(90deg,#02ff17,#05ffd5,#13bcda,#1FDBF0,#10c6cc,#10c6cc,#10c6cc,#10c6cc,#0b7519,#ebe71a,#ed11b6,#D504A6,#ed12b6);
-    }
-      .p_iphon {
-        font-size: 17px;
-    }
-    .logo_size {
-        width: 85px;
-        height: 70px;
-    }
-    .container {
-        background-color: #000000ab;
-        height: 4000px;
-    }
     
     
     
@@ -759,7 +782,7 @@ h1 {
         font-size: 16px;
     }
     .block_indent {
-        padding-top: 100px;
+        padding-top: 140px;
     }
     .bloc_price {
         width: 75px;
@@ -778,37 +801,40 @@ h1 {
     .block_indents {
         padding-bottom: 10px;
     }
-     /* Шапка */
-    .wrapper_header {
-        max-width: 95%;
-     }
-     .h1_with {
-        display: none;
-    }
-    .wrapper_cont {
-        padding-right: 70px;
-    }
-    .logo_size {
-        margin-top: 3px;
-        width: 75px;
-        height: 65px;
-    }
+   /* Шапка */
+   .wrapper_header {
+    max-width: 95%;
+ }
+ .h1_with {
+    display: none;
+}
+.wrapper_cont {
+    padding-right: 25px;
+}
+.logo_size {
+    margin-top: 3px;
+    width: 75px;
+    height: 65px;
+}
+
+.p_iphon {
+    font-size: 14px;
+}
+.indents_menu {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.a_iphon1 {
+    font-size: 12px;
     
-    .p_iphon {
-        font-size: 15px;
-    }
-    .indents_menu {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .a_iphon1 {
-        font-size: 12px;
-        
-    }
-    .img_size {
-        width: 21px;
-        height: 21px;
-    }
+}
+.img_size {
+    width: 21px;
+    height: 21px;
+}
+.p_time {
+    font-size: 11px;
+}
 }
 
 
@@ -830,7 +856,7 @@ h1 {
         margin-left: 5px;
     }
     .block_indent {
-        padding-top: 100px;
+        padding-top: 120px;
     }
     .bloc_price {
         width: 80px;
@@ -848,36 +874,41 @@ h1 {
     
    
     /* Шапка */
-    header {
-        height: 90px;
-    }
-    .wrapper_header {
-        max-width: 99%;
-     }
-    .wrapper_cont {
-        margin-top: 15px;
-        padding-right: 0px;
-       
-    }
-    .wrapper_iphon {
-        margin-top: 20px;
-        margin-right: 20px;
-    }
-    .wrapper {
-        justify-content: flex-start;
-    }
-    .logo_size {
-        margin-top: 10px;
-        width: 70px;
-        height: 65px;
-    }
-    .logo_fon {
-        width: 60px;
-        height: 80px;
-        margin-left: 3px;
-        margin-top: 3px;
-        
-    }
+  
+ .wrapper_header {
+  max-width: 99%;
+}
+.wrapper_cont {
+  
+  padding-right: 0px;
+ 
+}
+.wrapper_iphon {
+  
+  margin-right: 0px;
+}
+.wrapper {
+ justify-content: center;
+  
+}
+.logo_size {
+  
+  width: 60px;
+  height: 50px;
+}
+.logo_fon {
+  width: 60px;
+  height: 50px;
+  margin-left: 3px;
+ 
+}
+
+.a_iphon1 {
+font-size: 12px;
+}
+.p_time {
+font-size: 10px;
+}
 }
 
 
@@ -908,31 +939,34 @@ h1 {
 }
 
 @media(max-width:380px) {
-    /* Шапка */
+ /* Шапка */
     
-  .igm_size_margin {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+ .igm_size_margin {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.p_time {
+  font-size: 9px;
+}
 }
 @media(max-width:360px) {
-   /* Шапка */
-   .p_iphon {
-    font-size: 12px;
+ /* Шапка */
+ .p_iphon {
+  font-size: 12px;
 }
 .img_size {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 .logo_fon {
-    width: 50px;
-    margin-left: 3px;
-    margin-top: 10px;
-    
+  width: 50px;
+  margin-left: 3px;
+  
+  
 }
 .logo_size {
-    width: 50px;
-    height: 45px;
+  width: 50px;
+  height: 45px;
 }
     
 }
@@ -1321,7 +1355,7 @@ h1 {
 @media (max-width:1015px) {
 
   .nav-toggle { 
-      top: 5px;
+      top: -5px;
   }
 
 }
@@ -1346,7 +1380,8 @@ h1 {
       /* отступ от верхнего края панели */
       top: -8px;
       right: 475px;
-      font-size: 20px;
+      font-size: 18px;
+      border-radius: 12px;
   }
   .nav > ul > li > a {
       font-size: 17px;
@@ -1369,7 +1404,7 @@ h1 {
   }
   .nav-toggle {
       /* размер шрифта */
-      font-size: 17px;
+      font-size: 16px;
       right: 460px;
   }
 }
@@ -1378,12 +1413,15 @@ h1 {
       width: 260px;
       top: 23px;
       /* сдвигаем (прячем) панель относительно правого края страницы */
-      right: -440px;
+      
       height: 530px;
   }
-  
+  .nav-toggle {
+      /* размер шрифта */
+      font-size: 14px;
+      
+  }
 }
-  
   
   
   
