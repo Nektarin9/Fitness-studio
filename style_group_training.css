@@ -745,6 +745,11 @@ header {
 
 
 @media(max-width:408px) {
+    /* Шапка */
+  .igm_size_margin {
+    margin-left: 3px;
+    margin-right: 3px;
+}
     /* Страница 1 */
     .container { 
         height: 1780px;
@@ -759,10 +764,7 @@ header {
 @media(max-width:380px) {
     /* Шапка */
     
-  .igm_size_margin {
-    margin-left: 8px;
-    margin-right: 8px;
-}
+ 
 .p_time {
     font-size: 9px;
 }
@@ -770,7 +772,7 @@ header {
 @media(max-width:360px) {
    /* Шапка */
    .p_iphon {
-    font-size: 12px;
+    font-size: 4px;
 }
 .img_size {
     width: 18px;

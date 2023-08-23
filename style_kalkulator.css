@@ -1208,6 +1208,11 @@ font-size: 10px;
 
 
 @media(max-width:400px) {
+  /* Шапка */
+  .igm_size_margin {
+    margin-left: 3px;
+    margin-right: 3px;
+}
     /* Страница 1 */
     .header_block {
       height: 1840px;
@@ -1226,10 +1231,7 @@ font-size: 10px;
 @media(max-width:380px) {
   /* Шапка */
     
-  .igm_size_margin {
-    margin-left: 8px;
-    margin-right: 8px;
-}
+  
 .p_time {
     font-size: 9px;
 }
@@ -1249,7 +1251,7 @@ font-size: 10px;
     }
  /* Шапка */
  .p_iphon {
-  font-size: 12px;
+  font-size: 4px;
 }
 .img_size {
   width: 18px;
